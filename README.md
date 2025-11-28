@@ -62,6 +62,7 @@ Presentation (UI) <--HTTP--> Business Logic (API) <--HTTP--> Data Layer (OSRM + 
 
 # Cấu trúc thư mục
 
+```
 /gts_osrm_group12
 ├── presentation/
 │   ├── static/
@@ -76,7 +77,7 @@ Presentation (UI) <--HTTP--> Business Logic (API) <--HTTP--> Data Layer (OSRM + 
 │   └── osrm_client.py
 ├── README.md
 └── requirements.txt
-
+```
 --------------------------------------------------------------------------------------------------------------------
 
 ## Cài đặt & Chạy hệ thống
