@@ -62,21 +62,18 @@ Presentation (UI) <--HTTP--> Business Logic (API) <--HTTP--> Data Layer (OSRM + 
 
 # Cấu trúc thư mục
 
-/gts_osrm
-│
-├── presentation/ 
-│ ├── static/
-│ │ └── app.js
-│ ├── templates/
-│ │ └── index.html
-│ └── app_presentation.py
-│
+/gts_osrm_group12
+├── presentation/
+│   ├── static/
+│   │   └── app.js
+│   ├── templates/
+│   │   └── index.html
+│   └── app_presentation.py
 ├── logic/
-│ ├── app_logic.py
-│ ├── database.py
-│ ├── gtsp_solver.py
-│ └── osrm_client.py
-│
+│   ├── app_logic.py
+│   ├── database.py
+│   ├── gtsp_solver.py
+│   └── osrm_client.py
 ├── README.md
 └── requirements.txt
 
