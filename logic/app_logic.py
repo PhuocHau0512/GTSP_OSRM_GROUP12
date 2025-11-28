@@ -10,9 +10,9 @@ import time                              # Thư viện time để đo lường t
 # Khởi tạo ứng dụng Flask
 app = Flask(__name__)
 
-# Cấu hình CORS: Cho phép các yêu cầu từ frontend (chạy ở localhost:8080)
-# truy cập đến các API của server này (chạy ở localhost:5001).
-CORS(app, resources={r"/*": {"origins": "http://localhost:8080"}})
+# Cấu hình CORS: Cho phép các yêu cầu từ frontend (chạy ở mọi nơi)
+# truy cập đến các API của server này (chạy ở mọi nơi).
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Khởi tạo OSRM client, trỏ đến dịch vụ OSRM công cộng
 # OSRM (Open Source Routing Machine) dùng để tính toán ma trận khoảng cách/thời gian và lấy lộ trình chi tiết.
