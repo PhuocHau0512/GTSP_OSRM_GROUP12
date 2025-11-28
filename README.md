@@ -64,14 +64,14 @@ Presentation (UI) <--HTTP--> Business Logic (API) <--HTTP--> Data Layer (OSRM + 
 
 /gts_osrm
 │
-├── presentation/ # UI Layer
+├── presentation/ 
 │ ├── static/
 │ │ └── app.js
 │ ├── templates/
 │ │ └── index.html
 │ └── app_presentation.py
 │
-├── logic/ # Business Logic Layer
+├── logic/
 │ ├── app_logic.py
 │ ├── database.py
 │ ├── gtsp_solver.py
