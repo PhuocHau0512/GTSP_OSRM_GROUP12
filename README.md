@@ -62,6 +62,7 @@ Presentation (UI) <--HTTP--> Business Logic (API) <--HTTP--> Data Layer (OSRM + 
 
 # Cấu trúc thư mục
 
+<<<<<<< HEAD
 /gts_osrm
 │
 ├── presentation/
@@ -80,6 +81,24 @@ Presentation (UI) <--HTTP--> Business Logic (API) <--HTTP--> Data Layer (OSRM + 
 ├── README.md
 └── requirements.txt
 
+=======
+```
+/gts_osrm_group12
+├── presentation/
+│   ├── static/
+│   │   └── app.js
+│   ├── templates/
+│   │   └── index.html
+│   └── app_presentation.py
+├── logic/
+│   ├── app_logic.py
+│   ├── database.py
+│   ├── gtsp_solver.py
+│   └── osrm_client.py
+├── README.md
+└── requirements.txt
+```
+>>>>>>> 5b64062fdf1062d87e0a6be251679e475c0025bb
 --------------------------------------------------------------------------------------------------------------------
 
 ## Cài đặt & Chạy hệ thống
@@ -160,8 +179,11 @@ Mở trình duyệt và truy cập: http://localhost:8080
 **Email**: ph124work@gmail.com hoặc lephuochau5122004@gmail.com
 
 
+<<<<<<< HEAD
 netstat -ano | findstr :8080
 
 taskkill /PID ... /F
 
 
+=======
+>>>>>>> 5b64062fdf1062d87e0a6be251679e475c0025bb

@@ -10,8 +10,13 @@ import time                              # Thư viện time để đo lường t
 # Khởi tạo ứng dụng Flask
 app = Flask(__name__)
 
+<<<<<<< HEAD
 # Cấu hình CORS: Cho phép các yêu cầu từ frontend (chạy ở localhost:8080)
 # truy cập đến các API của server này (chạy ở localhost:5001).
+=======
+# Cấu hình CORS: Cho phép các yêu cầu từ frontend (chạy ở mọi nơi)
+# truy cập đến các API của server này (chạy ở mọi nơi).
+>>>>>>> 5b64062fdf1062d87e0a6be251679e475c0025bb
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Khởi tạo OSRM client, trỏ đến dịch vụ OSRM công cộng
@@ -262,6 +267,12 @@ def solve_gtsp_api():
 
 # Điểm khởi chạy của ứng dụng (khi chạy file python app_logic.py)
 if __name__ == '__main__':
+<<<<<<< HEAD
     NEW_PORT = 8081
     print(f"--- Lớp Trình diễn (UI) đang chạy tại: http://localhost:{NEW_PORT} ---")
     app.run(debug=True, port=NEW_PORT)
+=======
+    print("--- Lớp Logic nghiệp vụ (BLL) đang chạy tại: http://localhost:5001 ---")
+    # Chạy server Flask ở chế độ debug (tự khởi động lại khi có thay đổi) trên port 5001
+    app.run(debug=True, port=5001)
+>>>>>>> 5b64062fdf1062d87e0a6be251679e475c0025bb
